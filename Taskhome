@@ -1,0 +1,34 @@
+const arr1 = [1,2,3,4,5,6,7,8,9,10]
+const arr2 = [1,2,3,4,5,6,7,8,9,10]
+const hasil = []
+
+for (let i = 0; i < arr1.length; i++) {
+    for (let a = 0; a < arr2.length; a++) {
+        if (arr1[i] + arr2[a] === 17){
+            hasil.push(`${arr1[i]} + ${arr2[a]}`)  
+        }
+    }
+}
+hasil.forEach((element) => {
+    console.log(element);
+});
+
+console.log('===========================================');
+
+const string1 = "hello";
+const string2 = "world";
+result = string1.split('')
+result2 = string2.split('')
+const hasil2 = []
+for (const resultVal of result) {
+    for (const result2Val of result2) {
+        if (resultVal === result2Val){
+            hasil2.push(resultVal)
+        }
+    }
+}
+hasil2.forEach((element) => {
+    console.log(element);
+});
+console.log(result);
+console.log(result2);
